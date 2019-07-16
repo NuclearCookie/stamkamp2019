@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script src="lib/jquery-3.4.1.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="lib/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Het einde van de wereld...</h1>
+            <div class="row">
+                <div class="col text-center">
+                    <span id="countdown">0</span>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <section class="infection-box">
+                    <h2>Verspreiding van het virus.</h2>
+                    <div class="row">
+                        <div id="infection-setup" class="col">
+                            <input id="infected-nr" type="number">
+                            <button type="button" class="btn btn-danger" onclick="startInfection()">Ok</button>
+                        </div>
+                        <div class="col text-center">
+                            <span id="infected">0</span >
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <button id="reset" type="button" class="btn btn-warning" onclick="reset()">Reset</button>
+    </footer>
+</html>
